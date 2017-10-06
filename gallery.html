@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Gallery</title>
+		<style>
+			@charset "utf-8";
+			article, aside, figure, footer, header, hgroup,menu, nav, section { display: block; }
+			body
+				{
+					background-color:#CCCCCC;
+				}
+			#container
+				{
+					width:960px;
+					margin-left:200px;
+					margin-right:auto;
+					background-color:white;
+					border-radius:10px;  
+				}
+			header
+				{
+					width:960px;
+					font-size:35px;
+					text-align:center;
+					background-color:pink;
+					border-top-left-radius:10px;
+					border-top-right-radius:10px;
+					color:white;    
+				}
+			footer
+				{
+					width:960px;
+					height: 40px;
+					font-size:35px;
+					color:white;
+					text-align:center;
+					background-color:pink;
+					border-bottom-left-radius:10px;
+					border-bottom-right-radius:10px;
+					clear:both;  
+				}
+			#content
+				{
+					
+					width:960px;
+					margin-left:auto;
+					margin-right:auto;  
+				}
+			#content ul
+				{
+					list-style-type:none;
+				}
+			#content li
+				{
+					float:left;
+					width:200px;
+					display:block;
+					margin-right:50px;
+					margin-bottom:50px;    
+				}
+			img
+				{
+					width:220px;
+					height:200px;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="content">
+				<header>Let's take a Look back!</header>
+				<ul>
+					<li><a href="01.jpg" rel="group" class="fancybox" width="220" height="277"><img src="01.jpg" /></a></li>
+					<li><a href="02.jpg" rel="group" class="fancybox"><img src="02.jpg" /></a></li>
+					<li><a href="03.jpg" rel="group" class="fancybox"><img src="03.jpg" /></a></li>
+					<li><a href="04.jpg" rel="group" class="fancybox"><img src="04.jpg" /></a></li>
+					<li><a href="05.jpg" rel="group" class="fancybox"><img src="05.jpg" /></a></li>
+				</ul>
+				<footer></footer>
+			</div>	
+		</div>
+		<!-- Adding jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+ 
+		<!-- Adding mousewheel plugin -->
+		<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+ 
+		<!-- Adding fancyBox -->
+		<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){$(".fancybox").fancybox();});
+		</script>
+	
+	</body>
+	
+</html>
