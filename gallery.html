@@ -1,98 +1,92 @@
 <!DOCTYPE html>
 <html>
-	
-	<head>
-		<title>Gallery</title>
-		<style>
-			@charset "utf-8";
-			article, aside, figure, footer, header, hgroup,menu, nav, section { display: block; }
-			body
-				{
-					background-color:#CCCCCC;
-				}
-			#container
-				{
-					width:960px;
-					margin-left:200px;
-					margin-right:auto;
-					background-color:white;
-					border-radius:10px;  
-				}
-			header
-				{
-					width:960px;
-					font-size:35px;
-					text-align:center;
-					background-color:pink;
-					border-top-left-radius:10px;
-					border-top-right-radius:10px;
-					color:white;    
-				}
-			footer
-				{
-					width:960px;
-					height: 40px;
-					font-size:35px;
-					color:white;
-					text-align:center;
-					background-color:pink;
-					border-bottom-left-radius:10px;
-					border-bottom-right-radius:10px;
-					clear:both;  
-				}
-			#content
-				{
-					
-					width:960px;
-					margin-left:auto;
-					margin-right:auto;  
-				}
-			#content ul
-				{
-					list-style-type:none;
-				}
-			#content li
-				{
-					float:left;
-					width:200px;
-					display:block;
-					margin-right:50px;
-					margin-bottom:50px;    
-				}
-			img
-				{
-					width:220px;
-					height:200px;
-				}
-		</style>
-	</head>
-	<body>
-		<div id="container">
-			<div id="content">
-				<header>Let's take a Look back!</header>
-				<ul>
-					<li><a href="01.jpg" rel="group" class="fancybox" width="220" height="277"><img src="01.jpg" /></a></li>
-					<li><a href="02.jpg" rel="group" class="fancybox"><img src="02.jpg" /></a></li>
-					<li><a href="03.jpg" rel="group" class="fancybox"><img src="03.jpg" /></a></li>
-					<li><a href="04.jpg" rel="group" class="fancybox"><img src="04.jpg" /></a></li>
-					<li><a href="05.jpg" rel="group" class="fancybox"><img src="05.jpg" /></a></li>
-				</ul>
-				<footer></footer>
-			</div>	
-		</div>
-		<!-- Adding jQuery library -->
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
- 
-		<!-- Adding mousewheel plugin -->
-		<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
- 
-		<!-- Adding fancyBox -->
-		<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
-		<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){$(".fancybox").fancybox();});
-		</script>
-	
-	</body>
-	
+<title>MEDIA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">GALLERY</span>
+ </header>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="01.jpg" style="width:100%" onclick="onClick(this)" alt="At the club's fair, University of Vaasa">
+      <img src="fondis.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet cold outside, Quite heated convo inside">
+      <img src="present.jpg" style="width:100%" onclick="onClick(this)" alt="The Intro. Fun. Interesting.">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="04.jpg" style="width:100%" onclick="onClick(this)" alt="Nordact 2017 Conference, Openings!">
+      <img src="energy.jpg" style="width:100%" onclick="onClick(this)" alt="Getting insights about EnergyVaasa">
+      <img src="keepCalm.jpg" style="width:100%" onclick="onClick(this)" alt="Drinking wisdom.. from the finest!">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="fun.jpg" style="width:100%" onclick="onClick(this)" alt="Chillaxation!">
+      <img src="pirates.jpg" style="width:100%" onclick="onClick(this)" alt="Pirates on duty, arrgh!">
+      <img src="03.jpg" style="width:100%" onclick="onClick(this)" alt="Executive Director duties. Chocolates. cool peeps.">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="replot.jpg" style="width:100%" onclick="onClick(this)" alt="A fellow Rotaract boy received by Rotaract family!">
+      <img src="cheese.jpg" style="width:100%" onclick="onClick(this)" alt="Cheese. Wine. Chocolares. Grapes.">
+      <img src="05.jpg" style="width:100%" onclick="onClick(this)" alt="Diversity. Humanity. Love. Respect.">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-22">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-black w3-xlarge">
+	<div><a href="newRot.html"><i class="fa fa-home w3-hover-opacity"></i></a>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
 </html>
