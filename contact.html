@@ -1,6 +1,6 @@
  <!DOCTYPE html>
 <html>
-<title>Rotaract Vaasa</title>
+<title>Contact</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -8,25 +8,26 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+
 </style>
 <body>
+
  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
     <h2 class="w3-wide w3-center">LEAVE A COMMENT</h2>
     <p class="w3-opacity w3-center"><i>Anything in your brain? Drop a message!</i></p>
     <div class=" w3-padding-64 w3-center ">
       <div class="w3-col ">
-        <form method="post" action="comment.php" target="_blank">
+        <form method="post" action="new.php">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="name">
             </div>
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
             </div>
           </div>
-          <textarea class="w3-input w3-border" type="text" rows="5" cols="40" placeholder="I just wanna say .." required name="Message"></textarea>
+          <textarea class="w3-input w3-border" type="text" rows="5" cols="40" placeholder="I just wanna say .." required name="comment"></textarea>
           <button class="w3-button w3-black w3-section w3-left" type="submit">SEND</button>
         </form>
 		
@@ -40,7 +41,7 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
    <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-black w3-xlarge">
-	<div><a href="newRot.html"><i class="fa fa-home w3-hover-opacity"></i></a>
+	<div><a href="index.html"><i class="fa fa-home w3-hover-opacity"></i></a>
   </footer>
 </body>
 </html>

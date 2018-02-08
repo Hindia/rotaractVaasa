@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html>
+<title>FAQ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+</style>
+<body>
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">Frequently Asked Questions</h2>
+	<button class="accordion">What does Rotaract mean?</button>
+	<div class="panel">
+		<p>ROTAry in ACTion. Get it? It's the joined word of Rotary and action. Rotaract focuses on the development of young adults as leaders in their communities and workplaces. Clubs around the world also take part in international service projects, in a global effort to bring peace and international understanding to the world. Pretty cool right? </p>
+	</div>
+
+	<button class="accordion">Who can Join?</button>
+	<div class="panel">
+		<p>You! If you're 18-30 years old. If you want to give back to the community. If you want to increase your leadership qualities and If you want to have FUN while helping others.</p>
+	</div>
+
+	<button class="accordion">Do I need to speak Finnish?</button>
+	<div class="panel">
+		<p>Joo! Psych, No you absolutely don't! But you'll learn a lot of Finnish slangs if you join. </p>
+	</div>
+	<button class="accordion">How often do you meet?</button>
+	<div class="panel">
+		<p>We meet every two weeks officially but we also meet just to socialize.</p>
+	</div>
+	<button class="accordion">Where do you hold the meetings?</button>
+	<div class="panel">
+		<p>Fondis. But leave us an email or a message on Facebook before you show up to avoid any mishaps.</p>
+	</div>
+	<button class="accordion">What do I gain?</button>
+	<div class="panel">
+		<p>Where do we start? Service above self, amazing friends in every corner of the world, enhanced leadership qualities, boosted confidence, project planning and implementation... so much more. Did we mention it's always fun. </p>
+	</div>
+	<button class="accordion">What is expected from me?</button>
+	<div class="panel">
+		<p>Nothing .. okay if you insist then your enthusiasm and  your time.</p>
+	</div>
+</div>
+
+	<p class="w3-center">Your question is not listed?Leave us a message <a href="contact.html">here</a> then! :)<p>
+	<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-black w3-xlarge">
+	<div><a href="index.html"><i class="fa fa-home w3-hover-opacity"></i></a>
+  </footer>
+  <script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+</body>
+</html>
