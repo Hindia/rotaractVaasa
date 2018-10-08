@@ -1,3 +1,3 @@
 # rotaractVaasa
 First Website for our Rotaract Vaasa club hosted on school's server check it out at
-rotaractvaasa.herokuapp.com
+https://rotaractvaasa.herokuapp.com/
